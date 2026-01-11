@@ -1,7 +1,7 @@
 
 "use client";
 
-import { jobspostexperienceOptions, ctcOptions, educationOptions } from "../../../data/data";
+import { jobspostexperienceOptions, ctcOptions, educationOptions, jobseducationRolls } from "../../../data/data";
 import SearchableDropdownFormField from '../../../components/common/FormField/SearchableDropdownFormField'
 import FormDropdownFormField from '../../../components/common/FormField/FormDropdownFormField'
 import {FormInputField} from '../../../components/common/FormField/FormInputField';
@@ -26,13 +26,23 @@ export default function CandidateRequirementStep({ data, onChange, errors = {} }
       </div>
 
      <div className="relative">
-            <SearchableDropdownFormField
+        <FormDropdownFormField
+            name="education"
+            value={data.education || ""}
+            options={jobseducationRolls}
+            error={errors.experience} 
+            placeholder="Qualification"
+  onChange={(e) => onChange("education", e.target.value)}
+            //  onChange={(val) => onChange("education", val)}
+
+          />
+            {/* <SearchableDropdownFormField
                
                 placeholder="Qualification / Degree (e.g. B.Tech)"
                 value={data.education}
                 onChange={(val) => onChange("education", val)}
-                options={educationOptions}
-            />
+                options={jobseducationRolls}
+            /> */}
             {errors.education && <p className="text-red-500 text-xs mt-1">{errors.education}</p>}
           </div>
 

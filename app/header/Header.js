@@ -363,7 +363,7 @@ function ProfileDropdown({ close}) {
                     </Link>
                     <span className="text-[10px]  text-gray-700 font-medium">Jobs</span>
                   </div>
-                  <IconLabel href="/community" Icon={Users} label="Community" />
+                  {/* <IconLabel href="/community" Icon={Users} label="Community" /> */}
                   <div className="relative flex flex-col items-center">
                     <Link href="/notifications" aria-label="Notifications" className="flex flex-col items-center">
                       <Bell strokeWidth={1.5} size={18} className="text-gray-700 w-4 h-4" />

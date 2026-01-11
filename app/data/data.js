@@ -140,7 +140,7 @@
 ];
 
 export const availabilityOptions = [
-  { value: "", label: "Select Location" },
+  // { value: "", label: "Select Location" },
   { value: "Remote", label: "Remote" },
   { value: "Onsite", label: "Onsite" },
   { value: "Hybrid", label: "Hybrid" },
@@ -457,6 +457,16 @@ export const educationOptions = [
     "10th Pass"
 ];
 
+// export const jobseducationRolls = ["High School", "Bachelor's", "Master's", "PhD", "Any"];
+
+
+export  const jobseducationRolls = [
+    { value: "High School", label: "High School" },
+    { value: "Bachelor's", label: "Bachelor's" },
+    { value: "Master's", label: "Master's" },
+    { value: "PhD", label: "PhD" },
+    { value: "Any", label: "Any" },
+  ];
 
   // Job Title ke base par Current Role suggest karne ke liye mapping
 export  const jobTitleToRoleMapping = {

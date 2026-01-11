@@ -63,7 +63,7 @@ export const validateCandidateStep = (data, setErrors) => {
   const errors = {};
   
   if (!data.experience) errors.experience = "Experience level is required";
-  if (!data.education?.trim()) errors.education = "Education is required";
+  if (!data.education) errors.education = "Education is required";
   
   // Salary Validation
   if (!data.minSalary) errors.minSalary = "Min CTC required";

@@ -22,6 +22,7 @@ export default function BasicJobInfoStep({ data, onChange, errors = {} }) {
         onChange={(value) => onChange("jobTitle", value)}
         options={jobTitles}
         placeholder="Job Title"
+        
       />
       {errors.jobTitle && (
         <p className="text-red-500 text-sm px-4 mt-2">{errors.jobTitle}</p>
@@ -36,6 +37,7 @@ export default function BasicJobInfoStep({ data, onChange, errors = {} }) {
         value={data.availability}
         onChange={(e) => onChange("availability", e.target.value)}
         options={availabilityOptions}
+         placeholder="Select Location"
       
       />
       {errors.availability && (

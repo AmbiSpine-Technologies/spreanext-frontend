@@ -25,7 +25,7 @@ import ToolsMenu from "./toolsePopup";
 
 const menuItems = [
   { label: "Home", icon: House, link: "/feeds" },
-  { label: "Explore", icon: Compass, link: "/explore" },
+  // { label: "Explore", icon: Compass, link: "/explore" },
   { label: "Messages", icon: MessageCircleMore, link: "/messages" },
 ];
 
@@ -105,7 +105,7 @@ export default function Sidebar({ isSidebarOpen, toggleSidebar }) {
           />
 
           {/* COMMUNITY SECTION */}
-          <div>
+          {/* <div>
             {communityItems.map((item, i) => (
               <SidebarItem
                 key={i}
@@ -115,7 +115,7 @@ export default function Sidebar({ isSidebarOpen, toggleSidebar }) {
                 onClick={() => handleAction(item.action)}
               />
             ))}
-          </div>
+          </div> */}
 
           {/* PAGES SECTION */}
           <div className="border-b pb-3 border-gray-300">
